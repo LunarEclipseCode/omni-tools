@@ -1,0 +1,1602 @@
+---
+
+### JavaScript
+```javascript
+function greet(name) {
+    let message = `Hello, ${name}! Welcome to JavaScript.`;
+    if (name.length > 5) {
+        message += " Your name is quite long!";
+    }
+    alert(message);
+}
+
+greet("Alice");
+```
+
+---
+
+### Python
+```python
+def greet(name):
+    message = f"Hello, {name}! Welcome to Python."
+    if len(name) > 5:
+        message += " Your name is quite long!"
+    print(message)
+
+greet("Alice")
+```
+
+---
+
+### C++
+```cpp
+#include <iostream>
+using namespace std;
+
+void greet(string name) {
+    cout << "Hello, " << name << "! Welcome to C++." << endl;
+    if (name.length() > 5) {
+        cout << "Your name is quite long!" << endl;
+    }
+}
+
+int main() {
+    greet("Alice");
+    return 0;
+}
+```
+
+---
+
+### Java
+```java
+public class Main {
+    public static void greet(String name) {
+        String message = "Hello, " + name + "! Welcome to Java.";
+        if (name.length() > 5) {
+            message += " Your name is quite long!";
+        }
+        System.out.println(message);
+    }
+
+    public static void main(String[] args) {
+        greet("Alice");
+    }
+}
+```
+
+---
+
+### C#
+```csharp
+using System;
+
+class Program {
+    static void Greet(string name) {
+        string message = $"Hello, {name}! Welcome to C#.";
+        if (name.Length > 5) {
+            message += " Your name is quite long!";
+        }
+        Console.WriteLine(message);
+    }
+
+    static void Main() {
+        Greet("Alice");
+    }
+}
+```
+
+---
+
+### Ruby
+```ruby
+def greet(name)
+  message = "Hello, #{name}! Welcome to Ruby."
+  if name.length > 5
+    message += " Your name is quite long!"
+  end
+  puts message
+end
+
+greet("Alice")
+```
+
+---
+
+### PHP
+```php
+<?php
+function greet($name) {
+    $message = "Hello, $name! Welcome to PHP.";
+    if (strlen($name) > 5) {
+        $message .= " Your name is quite long!";
+    }
+    echo $message;
+}
+
+greet("Alice");
+?>
+```
+
+---
+
+### Swift
+```swift
+func greet(name: String) {
+    var message = "Hello, \(name)! Welcome to Swift."
+    if name.count > 5 {
+        message += " Your name is quite long!"
+    }
+    print(message)
+}
+
+greet(name: "Alice")
+```
+
+---
+
+### Go
+```go
+package main
+import "fmt"
+
+func greet(name string) {
+    message := fmt.Sprintf("Hello, %s! Welcome to Go.", name)
+    if len(name) > 5 {
+        message += " Your name is quite long!"
+    }
+    fmt.Println(message)
+}
+
+func main() {
+    greet("Alice")
+}
+```
+
+---
+
+### Kotlin
+```kotlin
+fun greet(name: String) {
+    var message = "Hello, $name! Welcome to Kotlin."
+    if (name.length > 5) {
+        message += " Your name is quite long!"
+    }
+    println(message)
+}
+
+fun main() {
+    greet("Alice")
+}
+```
+
+---
+
+### Rust
+```rust
+fn greet(name: &str) {
+    let mut message = format!("Hello, {}! Welcome to Rust.", name);
+    if name.len() > 5 {
+        message.push_str(" Your name is quite long!");
+    }
+    println!("{}", message);
+}
+
+fn main() {
+    greet("Alice");
+}
+```
+
+---
+
+### TypeScript
+```typescript
+function greet(name: string): void {
+    let message: string = `Hello, ${name}! Welcome to TypeScript.`;
+    if (name.length > 5) {
+        message += " Your name is quite long!";
+    }
+    console.log(message);
+}
+
+greet("Alice");
+```
+
+---
+
+### Bash
+```bash
+greet() {
+    local name="$1"
+    message="Hello, $name! Welcome to Bash."
+    if [ ${#name} -gt 5 ]; then
+        message+=" Your name is quite long!"
+    fi
+    echo "$message"
+}
+
+greet "Alice"
+```
+
+---
+
+### R
+```r
+greet <- function(name) {
+  message <- paste("Hello,", name, "Welcome to R.")
+  if (nchar(name) > 5) {
+    message <- paste(message, "Your name is quite long!")
+  }
+  print(message)
+}
+
+greet("Alice")
+```
+
+---
+
+### SQL
+```sql
+SELECT CASE 
+    WHEN LENGTH('Alice') > 5 
+    THEN 'Hello, Alice! Your name is quite long!' 
+    ELSE 'Hello, Alice!' 
+END AS message;
+```
+
+---
+
+### HTML
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Example</title>
+</head>
+<body>
+    <script>
+        function greet(name) {
+            let message = `Hello, ${name}! Welcome to HTML.`;
+            if (name.length > 5) {
+                message += " Your name is quite long!";
+            }
+            document.getElementById('greeting').textContent = message;
+        }
+    </script>
+
+    <p id="greeting"></p>
+
+    <script>
+        greet("Alice");
+    </script>
+</body>
+</html>
+```
+
+---
+
+### CSS
+```css
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    color: darkblue;
+}
+
+#message {
+    font-size: 24px;
+    content: "CSS syntax highlighting";
+    text-align: center;
+}
+```
+
+---
+
+### Perl
+```perl
+sub greet {
+    my $name = shift;
+    my $message = "Hello, $name! Welcome to Perl.";
+    if (length($name) > 5) {
+        $message .= " Your name is quite long!";
+    }
+    print "$message\n";
+}
+
+greet("Alice");
+```
+
+---
+
+### Haskell
+```haskell
+greet :: String -> String
+greet name = 
+    let message = "Hello, " ++ name ++ "! Welcome to Haskell."
+    in if length name > 5
+       then message ++ " Your name is quite long!"
+       else message
+
+main :: IO ()
+main = putStrLn (greet "Alice")
+```
+
+---
+
+### Scala
+```scala
+object Main extends App {
+    def greet(name: String): Unit = {
+        var message = s"Hello, $name! Welcome to Scala."
+        if (name.length > 5) {
+            message += " Your name is quite long!"
+        }
+        println(message)
+    }
+
+    greet("Alice")
+}
+```
+
+---
+
+### Shell (sh)
+```sh
+#!/bin/sh
+greet() {
+    local name="$1"
+    echo "Hello, $name! Welcome to shell scripting."
+    if [ ${#name} -gt 5 ]; then
+        echo "Your name is quite long!"
+    fi
+}
+
+greet "Alexander"
+```
+
+---
+
+### Lua
+```lua
+function greet(name)
+    local message = "Hello, " .. name .. "! Welcome to Lua."
+    if #name > 5 then
+        message = message .. " Your name is quite long!"
+    end
+    print(message)
+end
+
+greet("Alexander")
+```
+
+---
+
+### Julia
+```julia
+function greet(name::String)
+    message = "Hello, $name! Welcome to Julia."
+    if length(name) > 5
+        message *= " Your name is quite long!"
+    end
+    println(message)
+end
+
+greet("Alexander")
+```
+
+---
+
+### Dart
+```dart
+void greet(String name) {
+  var message = "Hello, $name! Welcome to Dart.";
+  if (name.length > 5) {
+    message += " Your name is quite long!";
+  }
+  print(message);
+}
+
+void main() {
+  greet("Alexander");
+}
+```
+
+---
+
+### Objective-C
+```objectivec
+#import <Foundation/Foundation.h>
+
+void greet(NSString *name) {
+    NSString *message = [NSString stringWithFormat:@"Hello, %@! Welcome to Objective-C.", name];
+    if ([name length] > 5) {
+        message = [message stringByAppendingString:@" Your name is quite long!"];
+    }
+    NSLog(@"%@", message);
+}
+
+int main() {
+    @autoreleasepool {
+        greet(@"Alexander");
+    }
+    return 0;
+}
+```
+
+---
+
+### Fortran
+```fortran
+program hello
+    character(len=30) :: name
+    name = "Alexander"
+    print *, "Hello, ", name, "! Welcome to Fortran."
+    if (len_trim(name) > 5) then
+        print *, "Your name is quite long!"
+    endif
+end program hello
+```
+
+---
+
+### Pascal
+```pascal
+program HelloWorld;
+var
+    name: string;
+begin
+    name := 'Alexander';
+    writeln('Hello, ', name, '! Welcome to Pascal.');
+    if Length(name) > 5 then
+        writeln('Your name is quite long!');
+end.
+```
+
+---
+
+### MATLAB
+```matlab
+function greet(name)
+    fprintf('Hello, %s! Welcome to MATLAB.\n', name);
+    if length(name) > 5
+        fprintf('Your name is quite long!\n');
+    end
+end
+
+greet('Alexander')
+```
+
+---
+
+### Groovy
+```groovy
+def greet(String name) {
+    def message = "Hello, ${name}! Welcome to Groovy."
+    if (name.length() > 5) {
+        message += " Your name is quite long!"
+    }
+    println(message)
+}
+
+greet("Alexander")
+```
+
+---
+
+### COBOL
+```cobol
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. HelloWorld.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 name PIC X(30) VALUE 'Alexander'.
+       PROCEDURE DIVISION.
+           DISPLAY 'Hello, ' name ' Welcome to COBOL.'.
+           IF LENGTH OF name > 5
+               DISPLAY 'Your name is quite long!'.
+           STOP RUN.
+```
+
+---
+
+### Elixir
+```elixir
+defmodule Greeter do
+  def greet(name) do
+    message = "Hello, #{name}! Welcome to Elixir."
+    if String.length(name) > 5 do
+      message = message <> " Your name is quite long!"
+    end
+    IO.puts(message)
+  end
+end
+
+Greeter.greet("Alexander")
+```
+
+---
+
+### F#
+```fsharp
+let greet name =
+    let message = sprintf "Hello, %s! Welcome to F#." name
+    let longNameMessage = if name.Length > 5 then "Your name is quite long!" else ""
+    printfn "%s %s" message longNameMessage
+
+greet "Alexander"
+```
+
+---
+
+### Lisp
+```lisp
+(defun greet (name)
+  (let ((message (format nil "Hello, ~A! Welcome to Lisp." name)))
+    (when (> (length name) 5)
+      (setf message (concatenate 'string message " Your name is quite long!")))
+    (print message)))
+
+(greet "Alexander")
+```
+
+---
+
+### Prolog
+```prolog
+greet(Name) :-
+    format("Hello, ~w! Welcome to Prolog.~n", [Name]),
+    (   string_length(Name, Length), Length > 5
+    ->  writeln("Your name is quite long!")
+    ;   true).
+
+?- greet("Alexander").
+```
+
+---
+
+### VB.NET
+```vbnet
+Module Program
+    Sub Greet(name As String)
+        Dim message As String = $"Hello, {name}! Welcome to VB.NET."
+        If name.Length > 5 Then
+            message &= " Your name is quite long!"
+        End If
+        Console.WriteLine(message)
+    End Sub
+
+    Sub Main()
+        Greet("Alexander")
+    End Sub
+End Module
+```
+
+---
+
+### Tcl
+```tcl
+proc greet {name} {
+    set message "Hello, $name! Welcome to Tcl."
+    if {[string length $name] > 5} {
+        append message " Your name is quite long!"
+    }
+    puts $message
+}
+
+greet "Alexander"
+```
+
+---
+
+### PowerShell
+```powershell
+function Greet {
+    param($name)
+    $message = "Hello, $name! Welcome to PowerShell."
+    if ($name.Length -gt 5) {
+        $message += " Your name is quite long!"
+    }
+    Write-Output $message
+}
+
+Greet "Alexander"
+```
+
+---
+
+### ABAP
+```abap
+DATA: name TYPE string VALUE 'Alexander',
+      message TYPE string.
+
+message = |Hello, { name }! Welcome to ABAP.|.
+WRITE: / message.
+
+IF strlen( name ) > 5.
+  WRITE: / 'Your name is quite long!'.
+ENDIF.
+```
+
+---
+
+### OCaml
+```ocaml
+let greet name =
+    let message = "Hello, " ^ name ^ "! Welcome to OCaml." in
+    let message =
+      if String.length name > 5 then
+        message ^ " Your name is quite long!"
+      else
+        message
+    in
+    print_endline message
+
+let () = greet "Alexander"
+```
+
+---
+
+### Scheme
+```scheme
+(define (greet name)
+  (display "Hello, ")
+  (display name)
+  (display "! Welcome to Scheme.")
+  (newline)
+  (if (> (string-length name) 5)
+      (begin
+        (display "Your name is quite long!")
+        (newline))))
+
+(greet "Alexander")
+```
+
+---
+
+### Erlang
+```erlang
+greet(Name) ->
+    io:format("Hello, ~s! Welcome to Erlang.~n", [Name]),
+    if
+        length(Name) > 5 ->
+            io:format("Your name is quite long!~n");
+        true -> ok
+    end.
+
+greet("Alexander").
+```
+
+---
+
+### Smalltalk
+```smalltalk
+greet := [:name |
+    | message |
+    message := 'Hello, ', name, '! Welcome to Smalltalk.'.
+    (name size > 5) ifTrue: [message := message, ' Your name is quite long!'].
+    Transcript show: message; cr].
+
+greet value: 'Alexander'.
+```
+
+---
+
+### Ada
+```ada
+with Ada.Text_IO; use Ada.Text_IO;
+
+procedure Hello_World is
+   name : String := "Alexander";
+   message : String := "Hello, " & name & "! Welcome to Ada.";
+begin
+   Put_Line(message);
+   if name'Length > 5 then
+      Put_Line("Your name is quite long!");
+   end if;
+end Hello_World;
+```
+
+---
+
+### VHDL
+```vhdl
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity HelloWorld is
+end HelloWorld;
+
+architecture Behavior of HelloWorld is
+begin
+    process
+        variable counter : integer := 0;
+    begin
+        while counter < 5 loop
+            report "Iteration: " & integer'image(counter);
+            counter := counter + 1;
+            wait for 10 ns;
+        end loop;
+        report "VHDL syntax highlighting complete";
+        wait;
+    end process;
+end Behavior;
+```
+
+---
+
+### Verilog
+```verilog
+module hello_world;
+    integer i;
+    initial begin
+        for (i = 0; i < 5; i = i + 1) begin
+            $display("Iteration %d: Verilog syntax highlighting", i);
+            #10; // Delay for 10 time units
+        end
+        $display("Verilog syntax highlighting complete");
+        $finish;
+    end
+endmodule
+```
+
+---
+
+### Brainfuck
+```brainfuck
++[----->+++<]>++.---.+++++++..+++.[--->+<]>----.
+++++[->++<]>+.>++++++[->+++<]>.
+```
+This Brainfuck program prints "Hi!".
+
+---
+
+### Nim
+```nim
+proc greet(name: string) =
+    let message = "Hello, " & name & "! Welcome to Nim."
+    if name.len > 5:
+        echo message & " Your name is quite long!"
+    else:
+        echo message
+
+greet("Nimenthusiast")
+```
+
+---
+
+### Crystal
+```crystal
+def greet(name)
+  message = "Hello, #{name}! Welcome to Crystal."
+  if name.length > 5
+    message += " Your name is quite long!"
+  end
+  puts message
+end
+
+greet("CrystalLover")
+```
+
+---
+
+### D
+```d
+import std.stdio;
+
+void greet(string name) {
+    string message = "Hello, " ~ name ~ "! Welcome to D.";
+    if (name.length > 5) {
+        message ~= " Your name is quite long!";
+    }
+    writeln(message);
+}
+
+void main() {
+    greet("DLanguageFan");
+}
+```
+
+---
+
+### Racket
+```racket
+#lang racket
+
+(define (greet name)
+  (define message (string-append "Hello, " name "! Welcome to Racket."))
+  (if (> (string-length name) 5)
+      (displayln (string-append message " Your name is quite long!"))
+      (displayln message)))
+
+(greet "RacketFan")
+```
+
+---
+
+### Zig
+```zig
+const std = @import("std");
+
+pub fn greet(name: []const u8) void {
+    var message = std.fmt.bufPrint("Hello, {s}! Welcome to Zig.\n", .{name});
+    if (name.len > 5) {
+        message = std.fmt.bufPrint("{s} Your name is quite long!\n", .{message});
+    }
+    std.debug.print("{s}", .{message});
+}
+
+pub fn main() void {
+    greet("ZigFanatic");
+}
+```
+
+---
+
+### SML (Standard ML)
+```sml
+fun greet name =
+    let
+        val message = "Hello, " ^ name ^ "! Welcome to Standard ML."
+    in
+        if String.size name > 5 then
+            print (message ^ " Your name is quite long!\n")
+        else
+            print (message ^ "\n")
+    end;
+
+greet "StandardMLFan"
+```
+
+---
+
+### Eiffel
+```eiffel
+class
+    HELLO_WORLD
+create
+    make
+feature
+    make
+        local
+            name: STRING
+        do
+            name := "EiffelFan"
+            if name.count > 5 then
+                print("Hello, " + name + "! Your name is quite long.%N")
+            else
+                print("Hello, " + name + "! Welcome to Eiffel.%N")
+            end
+        end
+end
+```
+
+---
+
+### Clojure
+```clojure
+(defn greet [name]
+  (let [message (str "Hello, " name "! Welcome to Clojure.")]
+    (if (> (count name) 5)
+      (println message "Your name is quite long!")
+      (println message))))
+
+(greet "ClojureFanatic")
+```
+
+---
+
+### Makefile
+```makefile
+name := MakefileFanatic
+
+all:
+	@echo "Hello, $(name)! Welcome to Makefile."
+	@if [ $$(echo -n $(name) | wc -c) -gt 5 ]; then \
+	    echo "Your name is quite long!"; \
+	fi
+```
+
+---
+
+### OpenCL
+```c
+__kernel void hello_world(__global char* s) {
+    s[0] = 'O';
+    s[1] = 'p';
+    s[2] = 'e';
+    s[3] = 'n';
+    s[4] = 'C';
+    s[5] = 'L';
+    s[6] = '\0'; // Null terminator for the string
+}
+
+__kernel void greet(__global char* name) {
+    if (get_global_id(0) == 0) {
+        printf("Hello, %s! Welcome to OpenCL.\n", name);
+    }
+}
+```
+
+---
+
+### GLSL (OpenGL Shading Language)
+```glsl
+#version 330 core
+out vec4 FragColor;
+
+uniform vec3 u_color;
+uniform float time;
+
+void main() {
+    vec3 dynamicColor = vec3(abs(sin(time)), u_color.g, u_color.b);
+    FragColor = vec4(dynamicColor, 1.0); // GLSL syntax highlighting
+}
+```
+
+---
+
+### Vala
+```vala
+void greet(string name) {
+    string message = "Hello, " + name + "! Welcome to Vala.";
+    if (name.length > 5) {
+        message += " Your name is quite long!";
+    }
+    print("%s\n", message);
+}
+
+void main() {
+    greet("ValaFanatic");
+}
+```
+
+---
+
+### HCL (HashiCorp Configuration Language)
+```hcl
+variable "name" {
+  default = "HCLFan"
+}
+
+output "greeting" {
+  value = "Hello, ${var.name}! Welcome to HCL."
+}
+
+output "name_length" {
+  value = length(var.name) > 5 ? "Your name is quite long!" : "Your name is short."
+}
+```
+
+---
+
+### YAML
+```yaml
+name: "YAMLFanatic"
+greeting: "Hello, YAMLFanatic! Welcome to YAML."
+name_length: "Your name is quite long!"
+```
+
+---
+
+### TOML
+```toml
+name = "TOMLFanatic"
+greeting = "Hello, TOMLFanatic! Welcome to TOML."
+name_length = "Your name is quite long!"
+```
+
+---
+
+### ABNF (Augmented Backus-Naur Form)
+```abnf
+rulelist = 1*( rule / (*c-wsp c-nl) )
+rule = rulename defined-as elements c-nl
+rulename = ALPHA *( ALPHA / DIGIT / "-" )
+elements = 1*DIGIT / quoted-string
+quoted-string = DQUOTE *(ALPHA / DIGIT / SP) DQUOTE
+```
+
+---
+
+### Agda
+```agda
+module HelloWorld where
+
+open import IO
+
+greet : String → IO Unit
+greet name = putStrLn ("Hello, " ++ name ++ "! Welcome to Agda.")
+
+main : IO Unit
+main = greet "AgdaFan"
+```
+
+---
+
+### AL (Microsoft Dynamics AL)
+```al
+procedure Greet(Name: Text)
+begin
+    if StrLen(Name) > 5 then
+        Message('%1, your name is quite long!', Name)
+    else
+        Message('Hello %1, welcome to AL!', Name);
+end;
+
+Greet('DynamicsUser');
+```
+
+---
+
+### Apex (Salesforce)
+```apex
+public class HelloWorld {
+    public static void greet(String name) {
+        if (name.length() > 5) {
+            System.debug('Hello ' + name + ', your name is quite long!');
+        } else {
+            System.debug('Hello ' + name + ', welcome to Apex!');
+        }
+    }
+}
+```
+
+---
+
+### APL
+```apl
+{⍵,' APL syntax highlighting'} 'Welcome to'
+```
+
+---
+
+### AppleScript
+```applescript
+set name to "AppleScriptUser"
+if length of name > 5 then
+    display dialog name & ", your name is quite long!"
+else
+    display dialog "Hello, " & name & "! Welcome to AppleScript."
+end if
+```
+
+---
+
+### AQL (ArangoDB Query Language)
+```aql
+FOR user IN users
+    FILTER user.age > 30
+    RETURN { name: user.name, age: user.age }
+```
+
+---
+
+### Arduino
+```cpp
+void setup() {
+    Serial.begin(9600);
+    String name = "ArduinoFan";
+    if (name.length() > 5) {
+        Serial.println(name + ", your name is quite long!");
+    } else {
+        Serial.println("Hello, " + name + "!");
+    }
+}
+
+void loop() {}
+```
+
+---
+
+### ARFF (Attribute-Relation File Format)
+```arff
+@relation weather
+
+@attribute outlook {sunny, overcast, rainy}
+@attribute temperature numeric
+@attribute humidity numeric
+@attribute windy {TRUE, FALSE}
+@attribute play {yes, no}
+
+@data
+sunny, 85, 85, FALSE, no
+overcast, 83, 86, FALSE, yes
+rainy, 70, 96, TRUE, no
+```
+
+---
+
+### ASP.NET
+```aspnet
+<%@ Page Language="C#" %>
+<script runat="server">
+    string name = "ASP.NETUser";
+    if (name.Length > 5) {
+        Response.Write(name + ", your name is quite long!");
+    } else {
+        Response.Write("Hello, " + name + "!");
+    }
+</script>
+<html>
+<body>
+</body>
+</html>
+```
+
+---
+
+### AutoIt
+```autoit
+$name = "AutoItUser"
+If StringLen($name) > 5 Then
+    MsgBox(0, "Greeting", $name & ", your name is quite long!")
+Else
+    MsgBox(0, "Greeting", "Hello, " & $name & "!")
+EndIf
+```
+
+---
+
+### AviSynth
+```avs
+s = "AviSynthUser"
+if (StrLen(s) > 5) {
+    Subtitle(s + ", your name is quite long!")
+} else {
+    Subtitle("Hello, " + s + "!")
+}
+```
+
+---
+
+### Avro IDL
+```avdl
+protocol HelloWorld {
+    string sayHello(string name);
+}
+
+record Greeting {
+    string message;
+}
+
+string sayHello(string name) {
+    if (name.length() > 5) {
+        return name + ", your name is quite long!";
+    } else {
+        return "Hello, " + name + "!";
+    }
+}
+```
+
+---
+
+### Bicep
+```bicep
+resource helloVM 'Microsoft.Compute/virtualMachines@2020-06-01' = {
+  name: 'helloWorldVM'
+  location: resourceGroup().location
+  properties: {
+    hardwareProfile: {
+      vmSize: 'Standard_DS1_v2'
+    }
+  }
+}
+
+output message string = 'Virtual machine ' + helloVM.name + ' deployed.'
+```
+
+---
+
+### Birb
+```birb
+fn greet(name: String) {
+    if (name.length > 5) {
+        print(name + ", your name is quite long!")
+    } else {
+        print("Hello, " + name + "!")
+    }
+}
+
+greet("BirbUser")
+```
+
+---
+
+### Bison
+```bison
+%token ID
+%%
+statement: ID ';'
+         | ID '+' ID ';' { printf("%s + %s\n", $1, $3); }
+         ;
+%%
+```
+
+---
+
+### BNF (Backus-Naur Form)
+```bnf
+<expr> ::= <term> "+" <term>
+<term> ::= <factor> "*" <factor>
+<factor> ::= <number> | "(" <expr> ")"
+<number> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+```
+
+---
+
+### BrightScript
+```brightscript
+sub greet(name)
+    if len(name) > 5 then
+        print name + ", your name is quite long!"
+    else
+        print "Hello, " + name + "!"
+    end if
+end sub
+
+greet("BrightScriptFan")
+```
+
+---
+
+### Bro (Zeek)
+```bro
+event bro_init() {
+    local name = "ZeekFan";
+    if ( |name| > 5 ) {
+        print name, "your name is quite long!";
+    } else {
+        print "Hello, ", name;
+    }
+}
+```
+
+---
+
+### BSL (1C:Enterprise)
+```bsl
+Procedure Greet(Name)
+    If StrLen(Name) > 5 Then
+        Message(Name + ", your name is quite long!");
+    Else
+        Message("Hello, " + Name + "!");
+    EndIf;
+EndProcedure
+
+Greet("EnterpriseUser");
+```
+
+---
+
+### CFScript (ColdFusion)
+```cfscript
+name = "CFScriptFan";
+if (len(name) > 5) {
+    writeOutput(name & ", your name is quite long!");
+} else {
+    writeOutput("Hello, " & name & "!");
+}
+```
+
+---
+
+### ChaiScript
+```chaiscript
+def greet(name) {
+    if (name.length() > 5) {
+        print(name + ", your name is quite long!");
+    } else {
+        print("Hello, " + name + "!");
+    }
+}
+
+greet("ChaiScriptUser");
+```
+
+---
+
+### CIL (Common Intermediate Language)
+```cil
+.method public static void Main() {
+    .locals init (string name)
+    ldstr "CILFan"
+    stloc.0
+    ldloc.0
+    ldlen
+    ldc.i4.5
+    bgt.s LONG_NAME
+    ldstr "Hello, "
+    ldloc.0
+    call string [mscorlib]System.String::Concat(string, string)
+    call void [mscorlib]System.Console::WriteLine(string)
+    br.s EXIT
+  LONG_NAME:
+    ldloc.0
+    ldstr ", your name is quite long!"
+    call string [mscorlib]System.String::Concat(string, string)
+    call void [mscorlib]System.Console::WriteLine(string)
+  EXIT:
+    ret
+}
+```
+
+---
+
+### CMake
+```cmake
+cmake_minimum_required(VERSION 3.10)
+project(HelloWorld)
+
+set(NAME "CMakeFan")
+if (NAME STREQUAL "CMakeFan")
+    message(STATUS "Hello, ${NAME}! Welcome to CMake.")
+else()
+    message(STATUS "${NAME}, your name is quite long!")
+endif()
+
+add_executable(hello main.cpp)
+```
+
+---
+
+### CoffeeScript
+```coffeescript
+greet = (name) ->
+    if name.length > 5
+        console.log "#{name}, your name is quite long!"
+    else
+        console.log "Hello, #{name}!"
+
+greet("CoffeeScriptUser")
+```
+
+---
+
+### Concurnas
+```concurnas
+def greet(name: String) -> void:
+    if name.length() > 5:
+        println(name + ", your name is quite long!")
+    else:
+        println("Hello, " + name + "!")
+
+greet("ConcurnasFan")
+```
+
+---
+
+### Coq
+```coq
+Theorem hello_world : "Coq syntax highlighting".
+Proof.
+  reflexivity.
+Qed.
+
+Definition greet (name: string) :=
+  if (String.length name >? 5)%nat then
+    name ++ " your name is quite long!"
+  else
+    "Hello, " ++ name.
+
+Compute greet "CoqFan".
+```
+
+---
+
+### Dhall
+```dhall
+let greet = \(name : Text) ->
+      if Text.length name > 5 then
+        name ++ ", your name is quite long!"
+      else
+        "Hello, " ++ name
+
+in greet "DhallUser"
+
+
+```
+
+---
+
+### EBNF (Extended Backus-Naur Form)
+```ebnf
+expression = term , { "+" , term } ;
+term = factor , { "*" , factor } ;
+factor = number | "(" , expression , ")" ;
+number = digit , { digit } ;
+digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+```
+
+---
+
+### Elm
+```elm
+greet name =
+    if String.length name > 5 then
+        text (name ++ ", your name is quite long!")
+    else
+        text ("Hello, " ++ name ++ "!")
+
+main =
+    greet "ElmUser"
+```
+
+---
+
+### FTL (FreeMarker Template Language)
+```ftl
+<#assign name = "FreeMarkerUser">
+<#if name?length > 5>
+    ${name}, your name is quite long!
+<#else>
+    Hello, ${name}!
+</#if>
+```
+
+---
+
+### GAP
+```gap
+s := "GAP syntax highlighting";;
+if Length(s) > 5 then
+    Print(s, ", your string is quite long!\n");
+else
+    Print("Hello, ", s, "\n");
+fi;
+```
+
+---
+
+### GCode
+```gcode
+G28 ; Home all axes
+G1 Z15 F1200 ; Move Z axis up
+G1 X50 Y50 F3000 ; Move to X50 Y50 at 3000 mm/min
+G92 E0 ; Reset extruder position
+G1 E10 F150 ; Extrude 10mm at 150mm/min
+```
+
+---
+
+### GDscript
+```gdscript
+var name = "GDscriptUser"
+
+func _ready():
+    if name.length() > 5:
+        print(name, ", your name is quite long!")
+    else:
+        print("Hello, ", name)
+```
+
+---
+
+### Gherkin
+```gherkin
+Feature: Gherkin syntax highlighting example
+  Scenario: Check name length
+    Given I have a variable "GherkinFan"
+    When the length of the variable is greater than 5
+    Then I print "Your name is quite long!"
+```
+
+---
+
+### GML (GameMaker Language)
+```gml
+var name = "GMLUser";
+if (string_length(name) > 5) {
+    show_message(name + ", your name is quite long!");
+} else {
+    show_message("Hello, " + name + "!");
+}
+```
+
+---
+
+### HAML
+```haml
+%html
+  %body
+    %p= name = "HAMLUser"
+    - if name.length > 5
+      %p= "#{name}, your name is quite long!"
+    - else
+      %p Hello, #{name}!
+```
+
+---
+
+### Handlebars
+```handlebars
+{{!-- Handlebars syntax highlighting example --}}
+{{#if (gt (length s) 5)}}
+  {{s}}, your string is quite long!
+{{else}}
+  Hello, {{s}}!
+{{/if}}
+```
+
+---
+
+### Idris
+```idris
+module Main
+
+greet : String -> IO ()
+greet name = 
+    if length name > 5 then 
+        putStrLn (name ++ ", your name is quite long!")
+    else 
+        putStrLn ("Hello, " ++ name ++ "!")
+
+main : IO ()
+main = greet "IdrisUser"
+```
+
+---
+
+### Io
+```io
+s := "IoUser"
+
+if(s size > 5, 
+    s .. ", your name is quite long!" println, 
+    "Hello, " .. s println)
+```
+
+---
+
+### J
+```j
+greet =: 3 : 0
+    if. #y > 5 do.
+        y , ' your name is quite long!'
+    else.
+        'Hello, ' , y
+    end.
+)
+
+echo greet 'JUser'
+```
+
+---
+
+### JEXL (Java Expression Language)
+```jexl
+var name = "JEXLUser";
+if (name.length() > 5) {
+    System.out.println(name + ", your name is quite long!");
+} else {
+    System.out.println("Hello, " + name + "!");
+}
+```
+
+---
+
+### Jolie
+```jolie
+define greet( name : string ) : string {
+    if ( length( name ) > 5 ) {
+        return name + ", your name is quite long!";
+    } else {
+        return "Hello, " + name + "!";
+    }
+}
+
+greet("JolieUser")()
+```
+
+---
+
+### Jq
+```jq
+{
+  "name": "JqUser",
+  "greeting": if (length(.name) > 5) then
+    (.name + ", your name is quite long!")
+  else
+    ("Hello, " + .name + "!")
+  end
+}
+```
