@@ -182,7 +182,7 @@ To get started with Omni Tools, clone the repository and install the required de
 git clone https://github.com/LunarEclipseCode/omni-tools
 cd omni-tools
 npm install
-npm start
+npm run dev
 ```
 
 Once the application is running, navigate to `http://localhost:3000` in your browser. 
